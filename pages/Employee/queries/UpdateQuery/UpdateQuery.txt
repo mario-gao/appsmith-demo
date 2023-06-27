@@ -1,0 +1,8 @@
+UPDATE employee SET
+		work_no = '{{update_form.fieldState.work_no.isVisible ? update_form.formData.work_no : update_form.sourceData.work_no}}',
+		name = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+    nick_name = '{{update_form.fieldState.nick_name.isVisible ? update_form.formData.nick_name : update_form.sourceData.nick_name}}',
+		gender = '{{update_form.fieldState.gender.isVisible ? update_form.formData.gender : update_form.sourceData.gender}}',
+		age = '{{update_form.fieldState.age.isVisible ? update_form.formData.age : update_form.sourceData.age}}',
+		title = '{{update_form.fieldState.title.isVisible ? update_form.formData.title : update_form.sourceData.title}}'
+WHERE id = {{data_table.selectedRow.id}};

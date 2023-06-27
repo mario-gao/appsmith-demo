@@ -1,0 +1,14 @@
+INSERT INTO employee (
+	work_no,
+	name,
+	nick_name,
+	gender,
+	age,
+	title)
+VALUES (
+	'{{insert_form.formData.work_no}}',
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.nick_name}}',
+	'{{insert_form.formData.gender}}',
+	'{{insert_form.formData.age}}',
+	'{{insert_form.formData.title}}');
